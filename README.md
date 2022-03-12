@@ -1,5 +1,6 @@
 UNDER DEVELOPMENT
 <br>
+<hr>
 <a href="https://mapserverapi.herokuapp.com/">Web Application</a>
 
 
