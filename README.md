@@ -7,6 +7,6 @@ UNDER DEVELOPMENT
 ## Technologies:
 - Android: Java
 - API: PHP
-- Web App: PHP + Laravel 8 + JS
+- Web App: PHP + Laravel 8 + PostgreSQL + JS
 
 
