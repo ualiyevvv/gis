@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.container {
+    /* width: 1200px;
+    margin: 0 auto; */
+    padding: 0 10px;
+}
+
+header {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 25px 0; */
+    background-color: white;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-menu {
+    display: flex;
+}
+.nav-item {
+    list-style: none;
+    margin-right: 40px;
+}
+.nav-item:last-child {
+    margin-right: 0;
+}
+main {
+    height: calc(100vh - 64px);
+}
+
+
+
+.wrapper {
+    position: relative;
+    height: 100%;
+}
+#map{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.search {
+    width: 300px;
+    position: absolute;
+    display: flex;
+    z-index: 11499;
+    top: 10px;
+    left: 60px;
+}
+.search-input {
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid silver;
+    outline-color: #257eca;
+}
+button {
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    background-color: #257eca;
+    color: white;
+}
+button:hover {
+    background-color: #2374bb;
+}
+
+
+.my-card {
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+}
+.city {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: medium;
+}
+.temp {
+    font-size: 26px;
+    font-weight: medium;
+}
+.icon {
+    width: 50px;
+}
+.humidity {
+    margin-bottom: 5px;
+}
+.description {
+    text-transform: capitalize;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.my-popup {
+    background-color: rgba(0, 0, 0, .85);
+}
+.my-popup .my-card {
+}
+
+.menu-layer {
+    min-width: 280px;;
+    max-width: 450px;
+    height: 580px;
+    padding: 10px;
+    background-color: white;
+    z-index: 11499;
+    position: absolute;
+    top: 95px;
+    left: 10px;
+    border-radius: 10px;
+}
+.menu__header {
+    padding: 8px 12px;
+    border-bottom: 1px solid gray;
+}
+.activities {
+    margin-top: 10px;
+    max-height: 91%;
+    overflow: auto;
+}
+.activity-item {
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all .3s;
+}
+.activity-item:hover {
+    background-color: #efefef;
+}
+.activity-item_active {
+    background-color: #dadada;
+}
+.activity-item:active {
+    background-color: #dadada;
+}
+.activity-item p {
+    display: none;
+}
